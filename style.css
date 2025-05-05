@@ -1,14 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-size: 18px;
     font-family: sans-serif;
     background-color: #86A9E6;
-
 }
 
 h1 {
@@ -25,6 +18,7 @@ h1 {
         padding: 15px;
         border-radius: 10px;
         border: 1.5px solid #6939E6;
+        outline: none;
     }
 
     #add_tarefa {
@@ -42,13 +36,12 @@ h1 {
 }
 
 li {
-    margin: 20px;
+    margin: 20px 0;
     padding: 10px;
     font-size: 24px;
     background-color: rgb(219, 199, 173);
     list-style: none;
     width: fit-content;
-    height: 90px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 4px rgba(112, 77, 31, 0.523);
@@ -62,6 +55,14 @@ li {
         box-shadow: 5px 5px 4px rgba(12, 93, 12, 0.431);
         width: fit-content;
         padding: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: rgb(86, 206, 86);
+        box-shadow: 5px 5px 4px rgba(86, 206, 86, 0.568);
+        color: #fff;
     }
 }
 
@@ -82,5 +83,9 @@ li {
     box-shadow: 5px 5px 4px rgba(214, 60, 60, 0.337);
     width: fit-content;
     padding: 10px;
-    color: #fff;
+}
+
+.deletar:hover {
+    background-color: rgb(214, 60, 60);
+    box-shadow: 5px 5px 4px rgba(214, 60, 60, 0.712);
 }
